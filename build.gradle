@@ -2,8 +2,10 @@ apply plugin: 'java'
 
 repositories {
     mavenCentral()
+
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'com.googlecode.jcsv', name: 'jcsv', version: '1.4.0'
 }
