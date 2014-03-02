@@ -1,5 +1,8 @@
 package de.ehmka.projects.xls4junit.api;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class Api {
 
 
@@ -16,5 +19,16 @@ public class Api {
             default:
                 return "0";
         }
+    }
+
+    public List<Integer> suc(Integer input) {
+        List<Integer> result = new LinkedList<>();
+        Integer firstSuc = input + 1;
+        Integer secondSuc = input + 2;
+        Integer thirdSuc = input + 3;
+        result.add(firstSuc);
+        result.add(secondSuc);
+        result.add(thirdSuc);
+        return result;
     }
 }
